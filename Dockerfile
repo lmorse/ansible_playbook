@@ -16,7 +16,7 @@ RUN \
     py-yaml \
     tar && \
   pip install --upgrade pip python-keyczar && \
-  pip install ansible==2.2.0.0 && \
+  pip install ansible==2.5.2 && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible /ansible/playbooks
