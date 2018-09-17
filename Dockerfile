@@ -15,6 +15,7 @@ RUN \
     py-setuptools \
     py-yaml \
     tar && \
+  pip install --upgrade python-keyczar && \
   apk-install gcc python-dev musl-dev libffi-dev openssl-dev && \
   pip install ansible==2.5.2 && \
   rm -rf /var/cache/apk/*
