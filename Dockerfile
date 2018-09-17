@@ -17,7 +17,7 @@ RUN \
     tar && \
   pip install --upgrade pip python-keyczar && \
   apk-install gcc python-dev musl-dev libffi-dev openssl-dev && \
-  pip install ansible==2.5.2 && \
+  pip install ansible==2.6.4 && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible /ansible/playbooks
